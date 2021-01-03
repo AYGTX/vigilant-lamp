@@ -1,0 +1,12 @@
+module serveur{
+    interface gererCompte{
+        struct Compte{
+            long code;
+            double solde;
+        };
+        typedef sequence <Compte> cptes;
+
+        Compte getCompte(in long code);
+
+    };
+};
